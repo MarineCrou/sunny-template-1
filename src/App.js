@@ -6,6 +6,7 @@ import About from "./Components/About";
 import BlogArticle from "./Components/BlogArticle";
 import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 export default function App() {
   return (
@@ -16,9 +17,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/services" element={<Services />} /> */}
+            <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/blog-article" element={<BlogArticle />} />
+            {/* <Route path="/services" element={<Services />} /> */}
           </Routes>
         </main>
         <Footer />

@@ -7,7 +7,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Blog", href: "/blog" },
-  { name: "Company", href: "/" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function NavBar() {

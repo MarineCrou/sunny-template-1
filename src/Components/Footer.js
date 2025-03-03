@@ -4,7 +4,7 @@ const navigation = {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Blog", href: "/blog" },
-    { name: "Company", href: "/" },
+    { name: "Contact", href: "/contact" },
   ],
   social: [
     {
@@ -73,7 +73,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-sky-50">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav
           aria-label="Footer"

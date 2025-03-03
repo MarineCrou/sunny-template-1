@@ -1,4 +1,5 @@
 "use client";
+import BlogSection from "./HomePage/BlogSection";
 
 const stats = [
   { label: "Transactions every 24 hours", value: "44 million" },
@@ -46,29 +47,10 @@ const team = [
   },
   // More people...
 ];
-const blogPosts = [
-  {
-    id: 1,
-    title: "Vel expedita assumenda placeat aut nisi optio voluptates quas",
-    href: "/",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    author: {
-      name: "Michael Foster",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  // More posts...
-];
 
 export default function About() {
   return (
-    <div className="bg-white">
+    <div className="bg-stone-50">
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -110,7 +92,7 @@ export default function About() {
                 clipPath:
                   "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
               }}
-              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#14bdfa] opacity-30"
             />
           </div>
           <div className="overflow-hidden">
@@ -118,7 +100,7 @@ export default function About() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-                    We’re changing the way people connect
+                    Who we are, Why we can help
                   </h1>
                   <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
                     Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
@@ -134,7 +116,7 @@ export default function About() {
                     <div className="relative">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="https://media.istockphoto.com/id/1995180374/fr/photo/groupe-souriant-de-femmes-diverses-assises-sur-une-terrasse-lors-dune-retraite-de-bien-%C3%AAtre.webp?s=1024x1024&w=is&k=20&c=f8RgCwH8YxlNUxl3FokWbN3Lam2hWolIz4ZyZ0KI0YM="
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -144,7 +126,7 @@ export default function About() {
                     <div className="relative">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="https://media.istockphoto.com/id/1414798527/fr/photo/jeune-homme-r%C3%A9confortant-et-soutenant-une-femme-triste-qui-a-de-s%C3%A9rieux-probl%C3%A8mes-%C3%A0-la-maison.webp?s=1024x1024&w=is&k=20&c=42bTUbADkFBvRRcH1oZPvPR1H1W7LNUTfPMv1QJTDCU="
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -152,7 +134,7 @@ export default function About() {
                     <div className="relative">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                        src="https://media.istockphoto.com/id/1586911323/fr/photo/gros-plan-de-mains-de-femmes-africaines-tenant-un-c%C5%93ur-rouge-en-solidarit%C3%A9.webp?s=1024x1024&w=is&k=20&c=S4D7HffP91O8nLICyYBoWLswDkWIj8gJ9Q3iV4NtAgY="
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -363,61 +345,7 @@ export default function About() {
           </ul>
         </div>
 
-        {/* Blog section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              From the blog
-            </h2>
-            <p className="mt-2 text-lg/8 text-gray-600">
-              Learn how to grow your business with our expert advice.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {blogPosts.map((post) => (
-              <article
-                key={post.id}
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
-              >
-                <img
-                  alt=""
-                  src={post.imageUrl}
-                  className="absolute inset-0 -z-10 size-full object-cover"
-                />
-                <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-                <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
-                <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
-                  <time dateTime={post.datetime} className="mr-8">
-                    {post.date}
-                  </time>
-                  <div className="-ml-4 flex items-center gap-x-4">
-                    <svg
-                      viewBox="0 0 2 2"
-                      className="-ml-0.5 size-0.5 flex-none fill-white/50"
-                    >
-                      <circle r={1} cx={1} cy={1} />
-                    </svg>
-                    <div className="flex gap-x-2.5">
-                      <img
-                        alt=""
-                        src={post.author.imageUrl}
-                        className="size-6 flex-none rounded-full bg-white/10"
-                      />
-                      {post.author.name}
-                    </div>
-                  </div>
-                </div>
-                <h3 className="mt-3 text-lg/6 font-semibold text-white">
-                  <a href={post.href}>
-                    <span className="absolute inset-0" />
-                    {post.title}
-                  </a>
-                </h3>
-              </article>
-            ))}
-          </div>
-        </div>
+        <BlogSection />
       </main>
     </div>
   );
