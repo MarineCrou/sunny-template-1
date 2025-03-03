@@ -1,3 +1,4 @@
+import BlogSection from "./HomePage/BlogSection";
 import NavBar from "./NavBar";
 
 import {
@@ -9,13 +10,13 @@ export default function Example() {
   return (
     <>
       <NavBar />
-      <div className="bg-white px-6 py-32 lg:px-8">
+      <div className="bg-stone-50 px-6 py-32 lg:px-8">
         <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
           <p className="text-base/7 font-semibold text-indigo-600">
             Introducing
           </p>
           <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            JavaScript for beginners
+            Boost Your conversion Rate
           </h1>
           <p className="mt-6 text-xl/8">
             Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
@@ -157,6 +158,7 @@ export default function Example() {
           </div>
           <button>Home</button>
         </div>
+        <BlogSection />
       </div>
     </>
   );
