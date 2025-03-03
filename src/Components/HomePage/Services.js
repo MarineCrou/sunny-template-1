@@ -5,28 +5,28 @@ const features = [
     name: "Unlimited inboxes",
     description:
       "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
-    href: "#",
+    href: "/",
     icon: InboxIcon,
   },
   {
     name: "Manage team members",
     description:
       "Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
-    href: "#",
+    href: "/",
     icon: UsersIcon,
   },
   {
     name: "Spam report",
     description:
       "Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
-    href: "#",
+    href: "/",
     icon: TrashIcon,
   },
 ];
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-stone-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -42,7 +42,7 @@ export default function Services() {
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="text-base/7 font-semibold text-gray-900">
-                  <div className="mb-6 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div className="mb-6 flex size-10 items-center justify-center rounded-lg bg-orange-600">
                     <feature.icon
                       aria-hidden="true"
                       className="size-6 text-white"
@@ -55,7 +55,7 @@ export default function Services() {
                   <p className="mt-6">
                     <a
                       href={feature.href}
-                      className="text-sm/6 font-semibold text-indigo-600"
+                      className="text-sm/6 font-semibold text-orange-400"
                     >
                       Learn more <span aria-hidden="true">→</span>
                     </a>

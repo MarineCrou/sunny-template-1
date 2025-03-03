@@ -2,7 +2,7 @@ const posts = [
   {
     id: 1,
     title: "Boost your conversion rate",
-    href: "#",
+    href: "/blog/blog-article",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl:
@@ -21,7 +21,7 @@ const posts = [
   {
     id: 2,
     title: "What we do in our charity",
-    href: "#",
+    href: "/blog/blog-article",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl:
@@ -40,7 +40,7 @@ const posts = [
   {
     id: 3,
     title: "We raised qui a few bucks",
-    href: "#",
+    href: "/blog/blog-article",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl:
@@ -59,7 +59,7 @@ const posts = [
   // More posts...
 ];
 
-export default function BlogDisplay() {
+export default function BlogSection() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
