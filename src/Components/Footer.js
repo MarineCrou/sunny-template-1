@@ -73,37 +73,56 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-sky-50">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav
-          aria-label="Footer"
-          className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
+    <footer className="relative bg-stone-50">
+      {/* Background Gradient Effect */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl blur-3xl opacity-50"
         >
-          {navigation.main.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 hover:text-orange-600"
-            >
-              {item.name}
-            </a>
-          ))}
-        </nav>
-        <div className="mt-16 flex justify-center gap-x-10">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 hover:text-orange-600"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon aria-hidden="true" className="size-6" />
-            </a>
-          ))}
+          <div
+            style={{
+              clipPath:
+                "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
+            }}
+            className="w-full h-[200px] bg-gradient-to-tr from-[#ff8080] to-[#57d3f9]"
+          />
         </div>
-        <p className="mt-10 text-center text-sm/6 text-gray-600">
-          &copy; 2024 Your Company, Inc. All rights reserved.
-        </p>
+      </div>
+
+      {/* Footer Content */}
+      <div className="relative">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:px-8">
+          <nav
+            aria-label="Footer"
+            className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
+          >
+            {navigation.main.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-600 hover:text-orange-600"
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+          <div className="mt-16 flex justify-center gap-x-10">
+            {navigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-600 hover:text-orange-600"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" className="size-6" />
+              </a>
+            ))}
+          </div>
+          <p className="mt-10 text-center text-sm/6 text-gray-600">
+            &copy; 2024 Your Company, Inc. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

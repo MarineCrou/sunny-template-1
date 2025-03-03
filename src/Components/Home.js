@@ -14,8 +14,8 @@ export default function Home() {
       <CtaBanner />
       <WhoWeAre />
       <Faq />
-      <BlogSection />
       <Contact />
+      <BlogSection />
     </>
   );
 }
