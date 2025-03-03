@@ -30,15 +30,12 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-stone-50 py-24 sm:py-24">
+    <div className="bg-stone-50 pt-4 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-orange-600">
-            Deploy faster
-          </h2>
-          <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
+          <h2 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
             Everything you need to deploy your app
-          </p>
+          </h2>
           <p className="mt-6 text-lg/8 text-gray-600">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
