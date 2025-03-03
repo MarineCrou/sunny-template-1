@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
 import IndividualTherapySection from "./Services/IndividualTherapySection";
+import CollectiveTherapySection from "./Services/CollectiveTherapySection";
 import FormationsSection from "./Services/FormationsSection";
+import Faq from "./HomePage/Faq";
 
 export default function Example() {
   return (
@@ -44,12 +46,15 @@ export default function Example() {
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <Link
-              to="/"
-              className="rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              to="/contact"
+              className="rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Contact Us
             </Link>
-            <Link to="#" className="text-sm/6 font-semibold text-amber-900">
+            <Link
+              to="/services"
+              className="text-sm/6 font-semibold text-amber-800 hover:text-amber-500 "
+            >
               Learn more <span aria-hidden="true">→</span>
             </Link>
           </div>
@@ -69,7 +74,9 @@ export default function Example() {
         </div>
       </div>
       <IndividualTherapySection />
+      <CollectiveTherapySection />
       <FormationsSection />
+      <Faq />
     </div>
   );
 }
