@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import FormationsSection from "./Services/FormationsSection";
 
 export default function Example() {
@@ -33,12 +30,12 @@ export default function Example() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/"
                   className="rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
                 </a>
-                <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                <a href="/" className="text-sm/6 font-semibold text-gray-900">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
