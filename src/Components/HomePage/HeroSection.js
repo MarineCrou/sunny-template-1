@@ -41,7 +41,7 @@ export default function HeroSection() {
                 clipPath:
                   "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
               }}
-              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff8080] to-[#f8acac] opacity-40"
+              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#8d97fc] to-[#432DD7] opacity-40"
             />
           </div>
           <div className="overflow-hidden">
@@ -60,13 +60,13 @@ export default function HeroSection() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="/"
-                      className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+                      className="rounded-md bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
                     >
                       Get started
                     </a>
                     <a
                       href="/"
-                      className="text-sm/6 font-semibold text-orange-600"
+                      className="text-sm/6 font-semibold text-amber-600"
                     >
                       Make a Donation <span aria-hidden="true">→</span>
                     </a>

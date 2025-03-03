@@ -49,7 +49,7 @@ export default function Services() {
                 <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
                   <feature.icon
                     aria-hidden="true"
-                    className="size-5 flex-none text-orange-600"
+                    className="size-5 flex-none text-amber-600"
                   />
                   {feature.name}
                 </dt>
@@ -58,7 +58,7 @@ export default function Services() {
                   <p className="mt-6">
                     <a
                       href={feature.href}
-                      className="text-sm/6 font-semibold text-orange-600"
+                      className="text-sm/6 font-semibold text-amber-600"
                     >
                       Learn more <span aria-hidden="true">→</span>
                     </a>

@@ -43,7 +43,7 @@ export default function Faq() {
     <div className="bg-stone-50">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-4xl font-semibold tracking-tight text-orange-600 sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-amber-600 sm:text-5xl">
             Frequently asked questions
           </h2>
           <dl className="mt-16 divide-y divide-gray-900/10">

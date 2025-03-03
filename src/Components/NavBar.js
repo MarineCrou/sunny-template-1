@@ -26,7 +26,7 @@ export default function NavBar() {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=orange&shade=600"
+                src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=amber&shade=500"
                 className="h-8 w-auto"
               />
             </Link>
@@ -53,7 +53,7 @@ export default function NavBar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="/" className="text-sm/6 font-semibold text-orange-600">
+            <Link to="/" className="text-sm/6 font-semibold text-amber-500">
               Donations <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -70,7 +70,7 @@ export default function NavBar() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=orange&shade=600"
+                  src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=amber&shade=500"
                   className="h-8 w-auto"
                 />
               </Link>

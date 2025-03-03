@@ -1,5 +1,5 @@
 "use client";
-import BlogSection from "./HomePage/BlogSection";
+import Contact from "./Contact";
 
 const stats = [
   { label: "Transactions every 24 hours", value: "44 million" },
@@ -323,12 +323,12 @@ export default function About() {
               Our team
             </h2>
             <p className="mt-6 text-lg/8 text-gray-600">
-              We’re a dynamic group of individuals who are passionate about what
+              We’re an expert group of individuals who are passionate about what
               we do and dedicated to delivering the best results for our
               clients.
             </p>
           </div>
-          <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
+          <ul className="mx-auto my-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
             {team.map((person) => (
               <li key={person.name}>
                 <img
@@ -345,7 +345,7 @@ export default function About() {
           </ul>
         </div>
 
-        <BlogSection />
+        <Contact />
       </main>
     </div>
   );

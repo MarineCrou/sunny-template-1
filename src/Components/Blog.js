@@ -59,7 +59,7 @@ export default function Blog() {
                     </a>
                   </div>
                   <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                    <h3 className="mt-3 text-lg/6 font-semibold text-amber-600 group-hover:text-amber-700">
                       <a href={post.href}>
                         <span className="absolute inset-0" />
                         {post.title}

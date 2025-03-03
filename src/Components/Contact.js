@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="mx-auto max-w-2xl divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-10 py-16 lg:grid-cols-3">
             <div>
-              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-orange-600">
+              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-indigo-700">
                 Get in touch
               </h2>
               <p className="mt-4 text-base/7 text-gray-600">
@@ -24,7 +24,7 @@ export default function Contact() {
                     <dd>
                       <a
                         href="mailto:collaborate@example.com"
-                        className="font-semibold text-orange-600"
+                        className="font-semibold text-amber-600"
                       >
                         collaborate@example.com
                       </a>
@@ -46,7 +46,7 @@ export default function Contact() {
                     <dd>
                       <a
                         href="mailto:press@example.com"
-                        className="font-semibold text-orange-600"
+                        className="font-semibold text-amber-600"
                       >
                         press@example.com
                       </a>
@@ -68,7 +68,7 @@ export default function Contact() {
                     <dd>
                       <a
                         href="mailto:careers@example.com"
-                        className="font-semibold text-orange-600"
+                        className="font-semibold text-amber-600"
                       >
                         careers@example.com
                       </a>
@@ -90,7 +90,7 @@ export default function Contact() {
                     <dd>
                       <a
                         href="mailto:hello@example.com"
-                        className="font-semibold text-orange-600"
+                        className="font-semibold text-amber-600"
                       >
                         hello@example.com
                       </a>
@@ -106,7 +106,7 @@ export default function Contact() {
           </div>
           <div className="grid grid-cols-1 gap-10 py-16 lg:grid-cols-3">
             <div>
-              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-orange-600">
+              <h2 className="text-pretty text-4xl font-semibold tracking-tight text-indigo-700">
                 Locations
               </h2>
               <p className="mt-4 text-base/7 text-gray-600">
