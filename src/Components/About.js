@@ -5,10 +5,11 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Resources", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/" },
+  { name: "Features", href: "/" },
+  { name: "Resources", href: "/" },
+  { name: "Company", href: "/" },
 ];
 const stats = [
   { label: "Transactions every 24 hours", value: "44 million" },
@@ -60,7 +61,7 @@ const blogPosts = [
   {
     id: 1,
     title: "Vel expedita assumenda placeat aut nisi optio voluptates quas",
-    href: "#",
+    href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl:
@@ -77,17 +78,16 @@ const blogPosts = [
 ];
 const footerNavigation = {
   main: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "About", href: "/" },
+    { name: "Blog", href: "/blog" },
+    { name: "Press", href: "/press" },
+    { name: "Accessibility", href: "/accessibility" },
+    { name: "Partners", href: "/partners" },
   ],
   social: [
     {
       name: "Facebook",
-      href: "#",
+      href: "/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -100,7 +100,7 @@ const footerNavigation = {
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -113,7 +113,7 @@ const footerNavigation = {
     },
     {
       name: "X",
-      href: "#",
+      href: "/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
@@ -122,7 +122,7 @@ const footerNavigation = {
     },
     {
       name: "GitHub",
-      href: "#",
+      href: "/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -135,7 +135,7 @@ const footerNavigation = {
     },
     {
       name: "YouTube",
-      href: "#",
+      href: "/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -161,7 +161,7 @@ export default function About() {
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
@@ -192,7 +192,7 @@ export default function About() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            <a href="/" className="text-sm/6 font-semibold text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -205,7 +205,7 @@ export default function About() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
@@ -237,7 +237,7 @@ export default function About() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="/"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Log in
@@ -526,10 +526,7 @@ export default function About() {
               clients.
             </p>
           </div>
-          <ul
-            role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
-          >
+          <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
             {team.map((person) => (
               <li key={person.name}>
                 <img
